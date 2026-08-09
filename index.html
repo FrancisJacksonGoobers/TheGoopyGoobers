@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheGoopyGoobers</title>
+<style>
+:root{--glass:rgba(255,255,255,.25);--glass-border:rgba(255,255,255,.55);--text:#063b5c;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS","Segoe UI",sans-serif;color:var(--text);overflow-x:hidden;background:radial-gradient(circle at 15% 15%,rgba(255,255,255,.95) 0 5%,transparent 18%),radial-gradient(circle at 80% 25%,rgba(255,255,255,.8) 0 4%,transparent 16%),linear-gradient(#62d8ff 0%,#a8efff 43%,#62d7d0 72%,#2aa7a4 100%)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background:radial-gradient(ellipse at 20% 25%,#fff 0 7%,transparent 7.5%),radial-gradient(ellipse at 27% 23%,#fff 0 5%,transparent 5.5%),radial-gradient(ellipse at 75% 12%,#fff 0 6%,transparent 6.5%);filter:blur(3px)}
+.bubbles{position:fixed;inset:0;pointer-events:none;overflow:hidden}.bubble{position:absolute;border:2px solid rgba(255,255,255,.7);background:rgba(255,255,255,.16);border-radius:50%;box-shadow:inset 4px 4px 10px rgba(255,255,255,.7);animation:float 8s ease-in-out infinite}
+.b1{width:80px;height:80px;left:7%;top:62%}.b2{width:28px;height:28px;left:18%;top:78%;animation-delay:1s}.b3{width:55px;height:55px;right:12%;top:55%;animation-delay:2s}.b4{width:22px;height:22px;right:27%;top:80%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-28px)}}
+header{width:min(1100px,92%);margin:22px auto 0;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;position:relative;z-index:2}
+.logo{font-size:clamp(24px,4vw,42px);font-weight:900;color:#fff;text-shadow:0 3px 0 rgba(0,110,150,.25),0 0 18px rgba(255,255,255,.8)}
+nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.glass{border:1px solid var(--glass-border);background:linear-gradient(135deg,rgba(255,255,255,.42),rgba(255,255,255,.12));box-shadow:0 8px 28px rgba(0,100,130,.16),inset 0 1px 1px rgba(255,255,255,.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+button,.btn{color:#075276;text-decoration:none;border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer;transition:.2s;display:inline-block}
+button:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,100,130,.25),inset 0 1px 1px #fff}
+.hero{width:min(1000px,92%);margin:55px auto 70px;text-align:center;position:relative;z-index:1}.hero-card{padding:55px 25px;border-radius:38px}
+h1{font-size:clamp(48px,10vw,100px);line-height:.9;margin:0 0 18px;color:#fff;text-shadow:0 5px 0 rgba(0,105,145,.22),0 0 25px rgba(255,255,255,.75)}
+.tagline{font-size:clamp(17px,3vw,25px);font-weight:700;color:#075276;margin-bottom:28px}.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.primary{background:rgba(255,255,255,.65);border-color:#fff}
+section{width:min(1000px,92%);margin:0 auto 70px;position:relative;z-index:1}
+.section-title{text-align:center;font-size:38px;margin-bottom:25px;color:#fff;text-shadow:0 3px 0 rgba(0,100,140,.2)}
+.discord{text-align:center;padding:40px 25px;border-radius:35px}.discord h2{font-size:34px;margin:0 0 10px;color:#fff;text-shadow:0 2px 0 rgba(0,90,130,.2)}.discord p{font-weight:700;margin-bottom:22px}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:10px}
+.video-card{padding:22px 18px;border-radius:28px;text-align:center;text-decoration:none;color:var(--text);transition:.25s;display:block;cursor:pointer}
+.video-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,100,130,.25),inset 0 1px 1px #fff}
+.video-card h3{margin:0 0 8px;font-size:17px;line-height:1.3}
+.video-card p{margin:0;font-size:13px;opacity:.7;font-weight:700}
+.yt-link{text-align:center;margin-top:28px}
+footer{text-align:center;padding:20px;color:rgba(255,255,255,.9);font-weight:700}.small{font-size:12px;opacity:.7;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="bubbles"><i class="bubble b1"></i><i class="bubble b2"></i><i class="bubble b3"></i><i class="bubble b4"></i></div>
+<header>
+  <div class="logo">TGG ✦</div>
+  <nav>
+    <a class="btn glass" href="goobers.html">Meet the Goobers</a>
+    <a class="btn glass" href="#discord">Discord</a>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="hero-card glass">
+      <h1>TheGoopyGoobers</h1>
+      <div class="tagline">goopy friends • goofy videos • good vibes</div>
+      <div class="cta">
+        <a class="btn glass primary" href="goobers.html">Meet the Goobers</a>
+        <a class="btn glass" href="https://discord.gg/74rGBH4sk8" target="_blank" rel="noopener">Join the Discord</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="youtube">
+    <h2 class="section-title">Latest Videos</h2>
+    <div class="videos">
+      <a class="video-card glass" href="https://www.youtube.com/watch?v=CoeemkD1_Qg" target="_blank" rel="noopener">
+        <h3>We Became PROFESSIONAL ARTISTS In Meccha Chameleon...</h3>
+        <p>Watch on YouTube ↗</p>
+      </a>
+      <a class="video-card glass" href="https://www.youtube.com/watch?v=kQFYqIak3lk" target="_blank" rel="noopener">
+        <h3>Where Are We…? | Escape The Backrooms</h3>
+        <p>Watch on YouTube ↗</p>
+      </a>
+      <a class="video-card glass" href="https://www.youtube.com/watch?v=cZ-U-e_B5W8" target="_blank" rel="noopener">
+        <h3>This Was a Bad Idea… | One-Armed Robber</h3>
+        <p>Watch on YouTube ↗</p>
+      </a>
+      <a class="video-card glass" href="https://www.youtube.com/watch?v=rjttriVV6E8" target="_blank" rel="noopener">
+        <h3>We Became Gnomes... | Burglin' Gnomes</h3>
+        <p>Watch on YouTube ↗</p>
+      </a>
+    </div>
+    <div class="yt-link">
+      <a class="btn glass primary" href="https://www.youtube.com/@Goopy_Goobers" target="_blank" rel="noopener">Visit Our YouTube Channel ↗</a>
+    </div>
+  </section>
+
+  <section id="discord">
+    <div class="discord glass">
+      <h2>Come Hang Out</h2>
+      <p>The Goobers' official Discord server.</p>
+      <a class="btn glass primary" href="https://discord.gg/74rGBH4sk8" target="_blank" rel="noopener">Join TheGoopyGoobers Discord ↗</a>
+    </div>
+  </section>
+</main>
+<footer>
+  TheGoopyGoobers © 2026
+  <div class="small">Made for the goobers.</div>
+</footer>
+</body>
+</html>
